@@ -1,44 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-        <h4>LT</h4>
-        <nav class="navi">
-            <ul>
-                <li><a href="#AboutMe">About</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" >
+  <link  href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" >
+</head>
+<body>
+  <!-- header -->
+   <header class="navbar">
+    <div class="nav-inner" >
+      <a href="#acceuil" class="nav-logo">Rachida<span>.</span> 
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#acceuil">Accueil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#projets">Projets  </a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+    </div>
+   </header>
 
-    <hr />
-
-
-    <section class="section">
-
-      <img src="img/linuxFounder.webp" alt="Linus Torvalds" class="Profileimg">
-
-      <div class="divProfile">
-        <h1 class="namePro">Linus Torvalds</h1>
-        <h1 class="titlePro">Computer Science</h1>
-
-        <div class="btnPro">
-          <a class="hiremeBtn" href="#Contact">Hire Me</a>
-          <a class="Cvbtn" href="cv/linus_torvalds_cv.pdf" download>
-            Download CV
-            <img src="img/download.png" alt="download" class="downloadIcon">
-          </a>
+   <!-- ───────── HERO ───────── -->
+  <section class="hero" id="acceuil">
+    <div class="hero-content">
+      <p class="hero-tag">Etdudiant en Developpemnt Web</p>
+      <h1>Bonjour, je suis<span>Rachida</span></h1>
+      <p class="hero-desc">
+        Passionne par la creation d'interfaces wen propres et fonctionnelles.
+        J'apprends, je code, et je partage mes projets pour inspirer les autres.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary"></a>
+          <a href="cv.pdf" download class="btn btn-outline">Telecharger CV</a>  
         </div>
       </div>
-       
-    </section>
-    
-  </body>
+      <div class="hero-avatar">
+        <div class="avatar-placeholder">MA</div>
+      </div>
+    </div>
+  </section>  
+  
+</body>
 </html>
