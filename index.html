@@ -1,180 +1,420 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Mon Portfolio</title>
-  <link rel="stylesheet" href="style.css" >
-  <link  href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" >
-</head>
-<body>
-  <!-- header -->
-   <header class="navbar">
-    <div class="nav-inner" >
-      <a href="#acceuil" class="nav-logo">Rachida<span>.</span> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ───────── NAVBAR ───────── -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="#accueil" class="nav-logo">Rachida<span>.</span></a>
         <nav>
           <ul class="nav-links">
-            <li><a href="#acceuil">Accueil</a></li>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#competences">Competences</a></li>
-            <li><a href="#projets">Projets  </a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-    </div>
-   </header>
+      </div>
+    </header>
 
-   <!-- ───────── HERO ───────── -->
-  <section class="hero" id="acceuil">
-    <div class="hero-content">
-       <p class="hero-tag">Etdudiant en Developpemnt Web</p>
-       <h1>Bonjour, je suis<span>Rachida</span></h1>
-         <p class="hero-desc">
-           Passionne par la creation d'interfaces wen propres et fonctionnelles.
-           J'apprends, je code, et je partage mes projets pour inspirer les autres.
-         </p>
+    <!-- ───────── HERO ───────── -->
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="hero-tag">Étudiante en Développement Web</p>
+        <h1>Bonjour, je suis <span>Rachida</span></h1>
+        <p class="hero-desc">
+          Passionnée par la création d'interfaces web propres et fonctionnelles.
+          J'apprends, je code, et je partage mes projets pour inspirer les
+          autres.
+        </p>
         <div class="hero-actions">
-          <a href="#projets" class="btn btn-primary"></a>
-          <a href="cv.pdf" download class="btn btn-outline">Telecharger CV</a>  
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="cv.pdf" download class="btn btn-outline">Télécharger CV</a>
         </div>
       </div>
       <div class="hero-avatar">
         <div class="avatar-placeholder">MA</div>
       </div>
-    </div>
-  </section>  
+    </section>
 
-
-  <!-- ───────── competence ───────── -->
-
-  <section class="section section-alt" id="competence" >
-    <div class="container">
-      <h2 class="section title">Competence</h2>
-      <div class="skills-grid">
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">HTML</span>
-            <span class="skill-pct">80%</span>
+    <!-- ───────── MARQUEE ───────── -->
+    <div class="marquee-section">
+      <p class="marquee-label">Skills &amp; Languages</p>
+      <div class="marquee-wrap">
+        <div class="track">
+          <!-- SET 1 -->
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#E44D26" />
+              <path
+                d="M7 4l2 22 7 2 7-2 2-22H7zm14.5 7H12l.3 3h8.9l-.9 9.5L16 25l-4.3-1.5-.3-3.5h3l.15 1.8L16 22.5l1.45-.7.15-2.3H11.7L11 12.5h10.8l-.3-1.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">HTML</span><span class="pill-pct">80%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 80%;"></div></div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">CSS</span>
-            <span class="skill-pct">5%</span>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#264de4" />
+              <path
+                d="M7 4l2 22 7 2 7-2 2-22H7zm14.5 7H12l.3 3h8.9l-.9 9.5L16 25l-4.3-1.5-.3-3.5h3l.15 1.8L16 22.5l1.45-.7.15-2.3H11.7L11 12.5h10.8l-.3-1.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">CSS</span><span class="pill-pct">5%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 5%;"></div></div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">JS</span>
-            <span class="skill-pct">0.01%</span>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#F7DF1E" />
+              <path
+                d="M9 23.5l2.3-1.4c.4.8.8 1.5 1.7 1.5.9 0 1.4-.4 1.4-1.7V14h2.8v8c0 2.8-1.6 4-4 4-2.1 0-3.4-1.1-4.2-2.5zm8.5-.3l2.3-1.3c.6 1 1.3 1.7 2.7 1.7 1.1 0 1.8-.6 1.8-1.3 0-.9-.7-1.3-1.9-1.8l-.7-.3c-1.9-.8-3.1-1.8-3.1-3.9 0-1.9 1.5-3.4 3.8-3.4 1.6 0 2.8.6 3.6 2l-2.2 1.4c-.4-.8-.9-1.1-1.6-1.1-.7 0-1.2.4-1.2 1.1 0 .8.5 1.1 1.6 1.6l.7.3c2.2 1 3.4 2 3.4 4.1 0 2.4-1.8 3.6-4.3 3.6-2.4 0-3.9-1.1-4.7-2.7z"
+                fill="#333"
+              />
+            </svg>
+            <span class="pill-name">JavaScript</span
+            ><span class="pill-pct">0%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.01%;"></div></div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">Git</span>
-            <span class="skill-pct">80%</span>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#F05032" />
+              <path
+                d="M27.2 14.8L17.2 4.8a2.72 2.72 0 00-3.85 0L11 7.2l2.44 2.44a3.23 3.23 0 014.1 4.11l2.35 2.35a3.24 3.24 0 013.46 5.4 3.24 3.24 0 01-4.58-4.54l-2.2-2.2v5.8a3.24 3.24 0 11-2.66-.1V14.5a3.24 3.24 0 01-1.76-4.25L9.7 7.83 4.8 12.73a2.72 2.72 0 000 3.84l10 10a2.72 2.72 0 003.85 0l8.55-8.55a2.72 2.72 0 000-3.22z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">Git</span><span class="pill-pct">80%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 80%;"></div></div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">Prompt Engineering</span>
-            <span class="skill-pct">300%</span>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#4479A1" />
+              <ellipse cx="16" cy="11" rx="8" ry="3.5" fill="#A8D1EF" />
+              <path
+                d="M8 11v3.5c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5V11c0 1.93-3.58 3.5-8 3.5S8 12.93 8 11z"
+                fill="#A8D1EF"
+              />
+              <path
+                d="M8 14.5V18c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5v-3.5c0 1.93-3.58 3.5-8 3.5S8 16.43 8 14.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">SQL</span><span class="pill-pct">75%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 300%;"></div></div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skill-header">
-            <span class="skill-name">Sql</span>
-            <span class="skill-pct">75%</span>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#FF6B1A" />
+              <text
+                x="16"
+                y="22"
+                text-anchor="middle"
+                font-size="14"
+                font-weight="700"
+                fill="white"
+                font-family="monospace"
+              >
+                AI
+              </text>
+            </svg>
+            <span class="pill-name">Prompt Eng.</span
+            ><span class="pill-pct">300%</span>
           </div>
-          <div class="skill-bar"><div class="skill-fill" style="--fill: 75%;"></div></div>
-        </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#283593" />
+              <text
+                x="16"
+                y="23"
+                text-anchor="middle"
+                font-size="20"
+                font-weight="700"
+                fill="white"
+                font-family="monospace"
+              >
+                C
+              </text>
+            </svg>
+            <span class="pill-name">C</span><span class="pill-pct">40%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#1a1a1a" />
+              <text
+                x="16"
+                y="22"
+                text-anchor="middle"
+                font-size="13"
+                fill="white"
+                font-family="monospace"
+              >
+                $_
+              </text>
+            </svg>
+            <span class="pill-name">Linux</span
+            ><span class="pill-pct">60%</span>
+          </div>
 
+          <!-- SET 2 — identical copy for seamless loop -->
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#E44D26" />
+              <path
+                d="M7 4l2 22 7 2 7-2 2-22H7zm14.5 7H12l.3 3h8.9l-.9 9.5L16 25l-4.3-1.5-.3-3.5h3l.15 1.8L16 22.5l1.45-.7.15-2.3H11.7L11 12.5h10.8l-.3-1.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">HTML</span><span class="pill-pct">80%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#264de4" />
+              <path
+                d="M7 4l2 22 7 2 7-2 2-22H7zm14.5 7H12l.3 3h8.9l-.9 9.5L16 25l-4.3-1.5-.3-3.5h3l.15 1.8L16 22.5l1.45-.7.15-2.3H11.7L11 12.5h10.8l-.3-1.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">CSS</span><span class="pill-pct">5%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#F7DF1E" />
+              <path
+                d="M9 23.5l2.3-1.4c.4.8.8 1.5 1.7 1.5.9 0 1.4-.4 1.4-1.7V14h2.8v8c0 2.8-1.6 4-4 4-2.1 0-3.4-1.1-4.2-2.5zm8.5-.3l2.3-1.3c.6 1 1.3 1.7 2.7 1.7 1.1 0 1.8-.6 1.8-1.3 0-.9-.7-1.3-1.9-1.8l-.7-.3c-1.9-.8-3.1-1.8-3.1-3.9 0-1.9 1.5-3.4 3.8-3.4 1.6 0 2.8.6 3.6 2l-2.2 1.4c-.4-.8-.9-1.1-1.6-1.1-.7 0-1.2.4-1.2 1.1 0 .8.5 1.1 1.6 1.6l.7.3c2.2 1 3.4 2 3.4 4.1 0 2.4-1.8 3.6-4.3 3.6-2.4 0-3.9-1.1-4.7-2.7z"
+                fill="#333"
+              />
+            </svg>
+            <span class="pill-name">JavaScript</span
+            ><span class="pill-pct">0%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#F05032" />
+              <path
+                d="M27.2 14.8L17.2 4.8a2.72 2.72 0 00-3.85 0L11 7.2l2.44 2.44a3.23 3.23 0 014.1 4.11l2.35 2.35a3.24 3.24 0 013.46 5.4 3.24 3.24 0 01-4.58-4.54l-2.2-2.2v5.8a3.24 3.24 0 11-2.66-.1V14.5a3.24 3.24 0 01-1.76-4.25L9.7 7.83 4.8 12.73a2.72 2.72 0 000 3.84l10 10a2.72 2.72 0 003.85 0l8.55-8.55a2.72 2.72 0 000-3.22z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">Git</span><span class="pill-pct">80%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#4479A1" />
+              <ellipse cx="16" cy="11" rx="8" ry="3.5" fill="#A8D1EF" />
+              <path
+                d="M8 11v3.5c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5V11c0 1.93-3.58 3.5-8 3.5S8 12.93 8 11z"
+                fill="#A8D1EF"
+              />
+              <path
+                d="M8 14.5V18c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5v-3.5c0 1.93-3.58 3.5-8 3.5S8 16.43 8 14.5z"
+                fill="white"
+              />
+            </svg>
+            <span class="pill-name">SQL</span><span class="pill-pct">75%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#FF6B1A" />
+              <text
+                x="16"
+                y="22"
+                text-anchor="middle"
+                font-size="14"
+                font-weight="700"
+                fill="white"
+                font-family="monospace"
+              >
+                AI
+              </text>
+            </svg>
+            <span class="pill-name">Prompt Eng.</span
+            ><span class="pill-pct">300%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#283593" />
+              <text
+                x="16"
+                y="23"
+                text-anchor="middle"
+                font-size="20"
+                font-weight="700"
+                fill="white"
+                font-family="monospace"
+              >
+                C
+              </text>
+            </svg>
+            <span class="pill-name">C</span><span class="pill-pct">40%</span>
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="6" fill="#1a1a1a" />
+              <text
+                x="16"
+                y="22"
+                text-anchor="middle"
+                font-size="13"
+                fill="white"
+                font-family="monospace"
+              >
+                $_
+              </text>
+            </svg>
+            <span class="pill-name">Linux</span
+            ><span class="pill-pct">60%</span>
+          </div>
+        </div>
       </div>
-
     </div>
 
-  </section>
-  <!-- ───────── Projets ─────────  -->
-   <section class="section" id="projets">
-     <div class="container">
-      <h2 class="section-title">Projets</h2>
-      <div class="projects-grid">
-        <div class="card">
-          <div class="card-tag">HTML / CSS</div>
-          <h3 class="card-title">Portfolio Personnel</h3>
-          <p class="card-desc">
-            Création d'un portfolio responsive présentant mon parcours,
-            mes compétences et mes projets réalisés en cours.
-          </p>
-           <a href="#" class="card-link">Voir le projet →</a>
-           </div> 
-          
-           <div class="card">
-          <div class="card-tag">C</div>
-          <h3 class="card-title">Gestion de Stock</h3>
-          <p class="card-desc">
-            Application de gestion de stock en C, permettant d'ajouter, modifier et supprimer des articles.
-          </p>
-          <a href="#" class="card-link">Voir le projet →</a>
+    <!-- ───────── COMPÉTENCES ───────── -->
+    <section class="section section-alt" id="competences">
+      <div class="container">
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML</span
+              ><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">CSS</span
+              ><span class="skill-pct">5%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 5%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span
+              ><span class="skill-pct">0%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 0.01%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Git</span
+              ><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Prompt Engineering</span
+              ><span class="skill-pct">300%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 100%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL</span
+              ><span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 75%"></div>
+            </div>
+          </div>
         </div>
-            
-         <div class="card">
-          <div class="card-tag">HTML / CSS</div>
-          <h3 class="card-title">Site Vitrine</h3>
-          <p class="card-desc">
-            Mini-site vitrine pour un commerce local fictif, avec navigation,
-            galerie photos et section contact.
-          </p>
-          <a href="#" class="card-link">Voir le projet →</a>
-        </div>
-       </div>
-     </div>
-   </section>
-  
-
-   <!-- ───────── CONTACT ───────── -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-box">
-        <p class="contact-intro">
-          Une question, une opportunité de stage ? N'hésitez pas à me contacter.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:mohamed@example.com" class="contact-item">
-            <span class="contact-icon">✉</span>
-            <span>FISSOUNE@example.com</span>
-          </a>
-          <a href="https://github.com/" target="_blank" class="contact-item">
-            <span class="contact-icon">⌥</span>
-            <span>github.com/fissoune_el</span>
-          </a>
-          <a href="https://linkedin.com/" target="_blank" class="contact-item">
-            <span class="contact-icon">in</span>
-            <span>linkedin.com/in/fissoune.gov</span>
-          </a>
-        </div>
-        <a href="cv.pdf" download class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">
-          Télécharger mon CV
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ───────── FOOTER ───────── -->
-  <footer class="footer">
-    <p>© -2026 Yasser Marouan Abderrahim — Réalisé avec HTML &amp; CSS · EMSI</p>
-  </footer>
+    <!-- ───────── PROJETS ───────── -->
+    <section class="section" id="projets">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <div class="projects-grid">
+          <div class="card">
+            <div class="card-tag">HTML / CSS</div>
+            <h3 class="card-title">Portfolio Personnel</h3>
+            <p class="card-desc">
+              Création d'un portfolio responsive présentant mon parcours, mes
+              compétences et mes projets réalisés en cours.
+            </p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+          <div class="card">
+            <div class="card-tag">C</div>
+            <h3 class="card-title">Gestion de Stock</h3>
+            <p class="card-desc">
+              Application de gestion de stock en C, permettant d'ajouter,
+              modifier et supprimer des articles.
+            </p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+          <div class="card">
+            <div class="card-tag">HTML / CSS</div>
+            <h3 class="card-title">Site Vitrine</h3>
+            <p class="card-desc">
+              Mini-site vitrine pour un commerce local fictif, avec navigation,
+              galerie photos et section contact.
+            </p>
+            <a href="#" class="card-link">Voir le projet →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- ───────── CONTACT ───────── -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-box">
+          <p class="contact-intro">
+            Une question, une opportunité de stage ? N'hésitez pas à me
+            contacter.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:FISSOUNE@example.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>FISSOUNE@example.com</span>
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-item">
+              <span class="contact-icon">⌥</span>
+              <span>github.com/fissoune_el</span>
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="contact-item"
+            >
+              <span class="contact-icon">in</span>
+              <span>linkedin.com/in/fissoune.gov</span>
+            </a>
+          </div>
+          <a
+            href="cv.pdf"
+            download
+            class="btn btn-primary"
+            style="margin-top: 2rem; display: inline-block"
+          >
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── FOOTER ───────── -->
+    <footer class="footer">
+      <p>© 2026 Rachida Fissoune — Réalisé avec HTML &amp; CSS · EMSI</p>
+    </footer>
+  </body>
 </html>
