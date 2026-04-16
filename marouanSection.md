@@ -13,16 +13,6 @@ Un composant HTML/CSS pour afficher les compétences techniques sous forme de ba
 
 ---
 
-## Structure des fichiers
-
-```
-portfolio/
-├── index.html        # Markup des sections Skills & Projects
-└── style.css         # Styles associés
-```
-
----
-
 ## HTML — Structure
 
 ### Section Compétences
@@ -137,4 +127,4 @@ th {
 
 ## Auteur
 
-Réalisé par **Maroun** dans le cadre d'un projet de portfolio collaboratif.
+Réalisé par **EL YASSINI Maroun** dans le cadre d'un projet de portfolio collaboratif.
