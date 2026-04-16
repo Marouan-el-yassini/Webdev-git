@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linus — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="nav-inner">
@@ -20,39 +22,96 @@
           <a href="#projects">Projets</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="cv/linus_torvalds_cv.pdf" download class="btn-cv">Télécharger CV</a>
+        <a href="cv/linus_torvalds_cv.pdf" download class="btn-cv"
+          >Télécharger CV</a
+        >
       </div>
     </header>
 
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-photo">
-        <img
-          src="img/images.jpeg"
-          alt="Photo de profil"
-        />
+        <img src="img/images.jpeg" alt="Photo de profil" />
       </div>
       <div class="hero-text">
-        <p class="hero-tag">Étudiant 2ème année — EMSI</p>
-        <h1>Bonjour, je suis <span>Abderrahim</span></h1>
+        <p class="hero-tag">software engineer</p>
+        <h1>Bonjour, je suis <span>Linus Torvalds</span></h1>
         <p class="hero-desc">
-          Creator of the Linux kernel (1991) and Git (2005). One of the most influential software
-engineers in history, Linus has shaped modern computing through open-source
-collaboration.
+          Creator of the Linux kernel (1991) and Git (2005). One of the most
+          influential software engineers in history, Linus has shaped modern
+          computing through open-source collaboration.
         </p>
         <div class="hero-links">
-          <a href="https://www.linkedin.com/in/linustorvalds/" target="_blank" class="btn-primary">LinkedIn</a>
-          <a href="https://github.com/torvalds?tab=overview&from=2026-04-01&to=2026-04-11" target="_blank" class="btn-outline">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/linustorvalds/"
+            target="_blank"
+            class="btn-primary"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/torvalds?tab=overview&from=2026-04-01&to=2026-04-11"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
         </div>
       </div>
     </section>
+    <!-- LOGOS-->
 
+    <!-- TECH LOGOS -->
+    <!-- PROJECTS SHOWCASE -->
+    <div class="projects-showcase">
+      <div class="showcase-card">
+        <svg viewBox="0 0 64 64" width="52" height="52">
+          <circle cx="32" cy="32" r="32" fill="#1a1a1a" />
+          <text x="32" y="42" text-anchor="middle" font-size="32" fill="white">
+            🐧
+          </text>
+        </svg>
+        <h3>Linux Kernel</h3>
+        <p>34M+ lines of code</p>
+        <span>Since 1991</span>
+      </div>
+
+      <div class="showcase-card">
+        <svg viewBox="0 0 64 64" width="52" height="52">
+          <rect width="64" height="64" rx="12" fill="#F05032" />
+          <path
+            d="M54.4 29.6L34.4 9.6a5.44 5.44 0 00-7.7 0L22 14.4l4.88 4.88a6.46 6.46 0 018.2 8.22l4.7 4.7a6.48 6.48 0 016.92 10.8 6.48 6.48 0 01-9.16-9.08l-4.4-4.4v11.6a6.48 6.48 0 11-5.32-.2V29a6.48 6.48 0 01-3.52-8.5L19.4 15.66 9.6 25.46a5.44 5.44 0 000 7.68l20 20a5.44 5.44 0 007.7 0l17.1-17.1a5.44 5.44 0 000-6.44z"
+            fill="white"
+          />
+        </svg>
+        <h3>Git</h3>
+        <p>Built in 10 days</p>
+        <span>2005</span>
+      </div>
+
+      <div class="showcase-card">
+        <svg viewBox="0 0 64 64" width="52" height="52">
+          <rect width="64" height="64" rx="12" fill="#283593" />
+          <text
+            x="32"
+            y="44"
+            text-anchor="middle"
+            font-size="28"
+            font-weight="700"
+            fill="white"
+            font-family="monospace"
+          >
+            C
+          </text>
+        </svg>
+        <h3>Linux Foundation</h3>
+        <p>15,000+ contributors</p>
+        <span>Global</span>
+      </div>
+    </div>
     <!-- COMPÉTENCES -->
     <section class="section section-alt" id="skills">
       <div class="container">
         <h2 class="section-title">Compétences techniques</h2>
         <div class="skills-grid">
-
           <div class="skill-item">
             <div class="skill-header">
               <span class="skill-name">C</span>
@@ -112,7 +171,6 @@ collaboration.
               <div class="skill-fill" style="--fill: 90%"></div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -132,22 +190,29 @@ collaboration.
           <tbody>
             <tr>
               <td>Projet 1</td>
-              <td>Maintain and direct development of the Linux kernel (34M+ lines of code)
-Review and merge patches from 15,000+ global contributors annually</td>
+              <td>
+                Maintain and direct development of the Linux kernel (34M+ lines
+                of code) Review and merge patches from 15,000+ global
+                contributors annually
+              </td>
               <td>Linux Foundation</td>
             </tr>
             <tr>
               <td>Projet 2</td>
-              <td>Built Git in 10 days to replace BitKeeper for kernel development
-Designed the object model (blobs, trees, commits) still in use today</td>
+              <td>
+                Built Git in 10 days to replace BitKeeper for kernel development
+                Designed the object model (blobs, trees, commits) still in use
+                today
+              </td>
               <td>Git</td>
             </tr>
             <tr>
               <td>Projet 3</td>
-              <td>Released Linux 0.01 in September 1991 as a hobby project
-Grew the project to a global community within 18 months</td>
-              <td>Linux Kernel
+              <td>
+                Released Linux 0.01 in September 1991 as a hobby project Grew
+                the project to a global community within 18 months
               </td>
+              <td>Linux Kernel</td>
             </tr>
           </tbody>
         </table>
@@ -155,32 +220,45 @@ Grew the project to a global community within 18 months</td>
     </section>
 
     <!-- CONTACT -->
-    <center><section class="section section-alt" id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-intro">Pour plus d'informations, envoyez-moi un message.</p>
-        <form method="post" action="" class="contact-form">
-          <div class="form-group">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
-          </div>
-          <input type="submit" value="Envoyer" class="btn-submit" />
-        </form>
-      </div>
-    </section></center>
+    <center>
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-intro">
+            Pour plus d'informations, envoyez-moi un message.
+          </p>
+          <form method="post" action="" class="contact-form">
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message..."
+              ></textarea>
+            </div>
+            <input type="submit" value="Envoyer" class="btn-submit" />
+          </form>
+        </div>
+      </section>
+    </center>
 
     <!-- FOOTER -->
     <footer class="footer">
       <p>© 2026 Linus Trovalds Univ. of Helsinki</p>
     </footer>
-
   </body>
 </html>
